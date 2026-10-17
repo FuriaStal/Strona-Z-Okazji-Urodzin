@@ -1,0 +1,177 @@
+:root
+{
+    font-size: 18px;
+    --black: #000000;
+    --fiol: #480256;
+    color: #ffffff;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--black);
+    background: linear-gradient(to top left, var(--black), var(--fiol));
+    height: 100%;
+    width: 100%;
+}
+body a{
+    text-decoration: none;
+} 
+header
+{
+	background-color: rgba(255, 255, 255, 0.01);
+    border: 2px solid rgba(37, 01, 45, 0.2);
+    height: 65px;
+    display: flex;
+    justify-content: center; /*poziom*/
+    align-items: center;  /*pion */
+    margin-bottom: 10px;
+}
+header  h1{
+    font-size: 3.5em;
+    float: left;
+    padding-right: 60px;
+}
+header > nav
+{
+	list-style-type: none;
+	margin: 0;
+	font-size: 20px;
+	line-height: 200%;
+    padding: 2px;
+}
+header> nav > ul > li
+{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 2px dashed #3003f7;
+}
+header> nav > ul > li:first-child
+{
+	border-left: 2px dashed #3003f7;
+}
+header> nav > ul > li > a
+{
+	color: #fff;
+}
+header> nav > ul > li > a:hover
+{
+	color: #58046f;
+}
+main > #box-1
+{
+    margin-left: 80px;
+    background: rgba(0,0,0, 0.1);
+    width: 30%;
+    text-align: center;
+    border-radius: 22px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+}
+main > #box-1 > h1
+{
+    padding: 5px;
+    text-align: center;
+}
+main > #box-2
+{
+    float: right;
+    margin-right: 50px;
+    background: rgba(150, 9, 126, 0.1);
+    width: 30%;
+    text-align: center;
+    margin-top: -20%;
+    border-radius: 22px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+}
+main > #box-2 > h1
+{
+    padding-bottom: 10px;
+}
+main > #box-2 > h1 > a
+{
+    color: #fff;
+}
+
+main > #box-3
+{
+    float: left;
+    margin-left: 150px;
+    background: rgba(82, 8, 65, 0.1);
+    width: 30%;
+    text-align: center;
+    margin-top: -5%;
+    border-radius: 22px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+}
+main > #box-3> h1
+{
+    padding-bottom: 10px;
+}
+main > #box-4
+{
+    margin-left: 35%;
+    margin-right: 55%;
+    background: rgba(82, 8, 65, 0.1);
+    width: 30%;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 22px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+}
+main > #box-4 > h1
+{
+    padding-bottom: 10px;
+}
+
+footer
+{
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background:rgba(43, 2, 86, 0.1);
+}
+.bg_img
+{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    animation: slideDown 5s linear infinite;
+}
+
+@keyframes slideDown
+{
+    from {transform:translateY(10)}
+    to {transform:translateY(67vh)}
+}
+
+main > #napis
+{
+     margin-left: 39%;
+    margin-right: 39%;
+    background: rgba(77, 26, 65, 0.685);
+    width: 17%;
+    text-align: center;
+    border-radius: 22px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+}
